@@ -1,0 +1,43 @@
+{
+ "name": "tal7aouy/avatar",
+ "description": "Generate user avatar using name initials letter.",
+ "keywords": [
+  "letter avatar",
+  "avatar",
+  "profile picture"
+ ],
+ "homepage": "https://github.com/tal7aouy/avatar",
+ "license": "MIT",
+ "authors": [
+  {
+   "name": "Mhammed Talhaouy",
+   "email": "tal7aouy@gmail.com",
+   "role": "PHP Developer"
+  }
+ ],
+ "scripts": {
+  "test": [
+   "@composer install",
+   "vendor/bin/phpunit"
+  ]
+ },
+ "autoload": {
+  "psr-4": {
+   "Tal7aouy\\Avatar\\": "src/"
+  }
+ },
+ "autoload-dev": {
+  "psr-4": {
+   "Tests\\": "./tests"
+  }
+ },
+ "require": {
+  "php": ">=7.0.0",
+  "ext-mbstring": "*",
+  "intervention/image": "^2.7"
+ },
+ "require-dev": {
+  "roave/security-advisories": "dev-master",
+  "phpunit/phpunit": "^9.5"
+ }
+}
